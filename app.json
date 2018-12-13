@@ -1,0 +1,26 @@
+{
+  "id": "a4c30388-b8b4-4ac8-b2ab-2036851e347b",
+  "name": "VTH seminar",
+  "publisher": "D.E. Veloper",
+  "brief": "My awesome vth seminar course",
+  "description": "Welcome to My awesome vth seminar course",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "http://ba-consult.dk/downloads/warrenty.txt",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "features": ["TranslationFile"],
+  "showMyCode": true,
+  "target": "Internal",
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "2.1"
+}
