@@ -75,28 +75,50 @@ table 50101 "CSD Seminar"
             AutoFormatType=1;
 
         }
-        field(110; "Gen. Prod Posting Group"; Decimal)
+        field(110; "Gen. Prod. Posting Group"; code[10])
 
         {
-            Caption = 'Gen. Prod Posting Group';
-            AutoFormatType=1;   aaaaa
+            Caption = 'Gen. Prod. Posting Group';
+            TableRelation = "Gen. Product Posting Group";
+
+        }
+        field(120; "Vat. Prod Posting Group"; Code[10])
+
+        {
+            Caption = 'Vat. Prod. Posting Group';
+            TableRelation = "Vat. Product Posting Group";
+            
+        }
+field(130; "No. Series"; Code[10])
+
+        {
+            Editable= false;
+            Caption = 'No. Series';
+            TableRelation = "No. Series";
+
 
         }
     }
 
     keys
     {
-        key(PK; MyField)
+        key(PK; "No.")
         {
             Clustered = true;
         }
+        key(key1;"Search Name");
     }
 
     var
-        myInt: Integer;
-
+    Seminar : record "CSD Seminar Setup";
+    //Commentline : Record "CSD Seminar Comment Line";
+    Seminar : record "CSD Seminar";
+    GenProdPostingGroup: Record "Gen. Product Posting Group";
+    NoSeriesMgt : Codeunit NoSeriesManagement;
+    
     trigger OnInsert()
     begin
+
 
     end;
 
